@@ -233,12 +233,19 @@ header {
 }
 
 /*Iteration 2 | Small Screens (width > 760px and width < 1024px)*/
-@media (min-width: 760px) and (max-width: 1024px) {
+@media (min-width: 761px) and (max-width: 1024px) {
   .navbar {
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .navbar li {
+    width: 100%;
   }
   .main-article {
     display: flex;
+  }
+  .main-article .image {
+    padding: 0;
   }
   .articles-container {
     display: grid;
